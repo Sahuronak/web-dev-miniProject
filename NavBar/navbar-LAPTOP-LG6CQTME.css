@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+nav {
+    height: 80px;
+    width: 100%;
+    background: rgb(27, 15, 189)
+}
+.logo{
+    width: 100px;
+    height:80px ;
+    border: 2px solid white;
+    padding:1px ;
+
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(130, 19, 19);
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    display: block;
+
+}
+
+nav a{
+    color: rgb(162, 17, 58);
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+
+}
+
+li:hover{
+    border: 2px solid white;
+}
+#cards {
+    border: 3px solid whitesmoke;
+    width: 450px;
+    height: 400px;
+    background-image: url(../TECHPHOTO/era.jpg);
+    box-shadow: 20px 10px 10px;
+    display: grid;
+    border-radius: 1cm;
+    transition: .5s ease;
+    margin: auto;
+
+}
+#cards:hover{
+    color: #200571;
+}
+#car::before {
+    border: 2px solid white;
+    content: " NEW ERA";
+    opacity: .8;
+    width: 200px;
+    height: 80px;
+    transition: 1.9s;
+    background: linear-gradient(50deg,rgb(202, 188, 32),rgb(155, 25, 101));
+    transform: rotate(-720deg)translate(0,-100px);
+}
+#car{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    margin: auto;
+    color: white;
+    
+   
+}
+#car:hover::before{
+    animation: effect 2s;
+}
+@keyframes effect{
+    100%{
+        transform: rotate(720deg)translate(0,450px);
+    }
+}
+.container{
+    width: 100%;
+    border: 3px solid blue;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container> div{
+    background: pink;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+
+}
+#grid{
+    background-color: palevioletred;
+    display: grid;
+    padding: 20px;
+    grid-template-columns:100px 100px 100px auto;
+
+}
+.grid-item{
+    background-color: whitesmoke;
+    font-size: 20px;
+    padding: 20px;
+}
+.item{
+    border: 3px solid grey;
+    margin: 12px 3px;
+    }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css_folder/login_page.css">
+    <script src="../javascript/login_page.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" method="post" name="form" onsubmit="return validated()">
+            <h1>LOGIN</h1>
+            <div class="input-control">
+                <label for="username">User Name</label>
+                <input id="username" name="username" type="text">
+                <div class="error">please fill your user</div>
+            </div>
+            <div class="input-control">
+                <label for="Email"> E-mail
+                </label>
+                <input id="email" name="username" type="email">
+                <div class="error">please fill your email</div>
+            </div>
+
+            <div class="input-control">
+                <label for="Password">Password</label>
+                <input id="password" name="Password" type="password">
+                <div class="error">please fill your password</div>
+            </div>
+            <button type="submit">Login</button>
+            <h6><a href="#forget password">  Forget Password </a></h6>
+
+        </form>
+    </div>
+    
+</body>
+</html>
